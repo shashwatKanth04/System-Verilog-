@@ -19,6 +19,7 @@ B b;
 initial begin
     b = new;
     x = b.i;
-    y = b.get;
+    y = b.get();
+    $display("x : %0d , y = %0d ", x, y);
 end
 endmodule
